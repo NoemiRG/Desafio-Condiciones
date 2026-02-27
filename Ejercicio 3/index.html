@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h2>Ingrese la Password</h2>
+        <select name="" id="num1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <select name="" id="num2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <select name="" id="num3">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+    </div>
+    <div style="text-align: center; padding: 10px;">
+        <button onclick='
+            let password1=911
+            let password2=714
+
+            let num1= document.querySelector("#num1").value
+            let num2= document.querySelector("#num2").value
+            let num3= document.querySelector("#num3").value
+
+            let passtemporal = num1+num2+num3
+
+            if (passtemporal==password1){
+                resultado=document.querySelector("#resultado").textContent = "password 1 correcto" 
+            }else if (passtemporal==password2){
+                resultado=document.querySelector("#resultado").textContent = "password 2 correcto" 
+            }else{
+                resultado=document.querySelector("#resultado").textContent = "password incorrecto" 
+            }
+            '>Ingresar</button>
+
+        <p id="resultado"></p>
+    </div>
+
+</body>
+
+</html>

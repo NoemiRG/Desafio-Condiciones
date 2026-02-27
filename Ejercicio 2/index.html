@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <style>
+        img{
+            width: 200px;
+        }
+        .contenedor {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .cant-img{
+            display: flex;
+            flex-direction: column;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <p style="text-align: center;">Puedes llevar hasta 10 stickers en total</p>
+    <div class="contenedor">
+        <div class="cant-img">
+            <img src="./img/cocodrilo.png" alt="cocodrilo">
+            <input type="number" id="num1">
+        </div>
+        <div class="cant-img">
+            <img src="./img/conejo.png" alt="conejo">
+            <input type="number" id="num2">
+        </div>
+        <div class="cant-img">
+            <img src="./img/erizo.png" alt="erizo">
+            <input type="number" id="num3">
+        </div>
+    </div>   
+
+    <p style="text-align: center;" id="resultado"></p>
+    <div style="text-align: center;">
+        <button  onclick='
+        let num1 = document.querySelector("#num1").value
+        let num2 = document.querySelector("#num2").value
+        let num3 = document.querySelector("#num3").value
+        let suma = Number(num1)+Number(num2)+Number(num3)
+    
+      
+    
+        if(suma>10){
+            document.querySelector("#resultado").textContent ="Llevas demasiados stickers"
+        }
+        else{
+            document.querySelector("#resultado").textContent ="Llevas "+ suma + " sticker"
+        }
+        '>Verificar</button>
+    </div>
+  
+    
+</body>
+</html>
