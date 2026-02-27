@@ -1,2 +1,2 @@
 # Desafio-Condiciones
-link githubpages = https://noemirg.github.io/Desafio-Condiciones/git
+link githubpages = https://noemirg.github.io/Desafio-Condiciones/
